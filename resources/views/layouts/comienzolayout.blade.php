@@ -64,34 +64,34 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="#header">INICIO <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                        <a class="nav-link page-scroll" href="#features">CARACTERISTICAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                        <a class="nav-link page-scroll" href="#details">DETALLES</a>
                     </li>
 
                     <!-- Dropdown Menu -->          
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle page-scroll" href="#video" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEO</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                            <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICULOS</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMINOS Y CONDICIONES</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">POLITICA DE PRIVACIDAD</span></a>
                         </div>
                     </li>
                     <!-- end of dropdown menu -->
 
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#pricing">PRICING</a>
+                        <a class="nav-link page-scroll" href="#pricing">MEMBRESIAS</a>
                     </li>
                 </ul>
                 <span class="nav-item">
-                    <a class="btn-outline-sm" href="{{route('login')}}">LOG IN</a>
+                    <a class="btn-outline-sm" href="{{route('login')}}">INICIAS SESION</a>
                 </span>
             </div>
         </div> <!-- end of container -->
@@ -106,9 +106,9 @@
                 <div class="row">
                     <div class="col-lg-6 col-xl-5">
                         <div class="text-container">
-                            <h1>SaaS App HTML Landing Page</h1>
-                            <p class="p-large">Use Tivo to automate your marketing actions in order to reach a much larger audience</p>
-                            <a class="btn-solid-lg page-scroll" href="sign-up.html">SIGN UP</a>
+                            <h1>BOOMCRASH</h1>
+                            <p class="p-large">Que esperas, unete ya y se parte de BOOMCRASH</p>
+                            <a class="btn-solid-lg page-scroll" href="{{route('login')}}">INICIAR SESION</a>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6 col-xl-7">

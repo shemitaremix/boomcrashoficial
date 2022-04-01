@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Log In - Tivo - SaaS App HTML Landing Page Template</title>
+    <title>Incion de sesion</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -64,30 +64,30 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{route('inicio')}}">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="{{route('inicio')}}">INICIO <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{route('inicio')}}">FEATURES</a>
+                        <a class="nav-link page-scroll" href="{{route('inicio')}}">CARACTERISTICAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{route('inicio')}}">DETAILS</a>
+                        <a class="nav-link page-scroll" href="{{route('inicio')}}">DETALLES</a>
                     </li>
 
                     <!-- Dropdown Menu -->          
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle page-scroll" href="index.html#video" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEO</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                            <a class="dropdown-item" href="article-details.html"><span class="item-text">DETALLES DEL ARTICULO</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMINOS Y CONDICIONES</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">POLITICA DE PRIVACIDAD</span></a>
                         </div>
                     </li>
                     <!-- end of dropdown menu -->
 
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#pricing">PRICING</a>
+                        <a class="nav-link page-scroll" href="index.html#pricing">MEMBRESIAS</a>
                     </li>
                 </ul>
                 <span class="nav-item">
@@ -104,8 +104,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Log In</h1>
-                   <p>You don't have a password? Then please <a class="white" href="{{route('sing')}}">Sign Up</a></p> 
+                    <h1>Inicia Sesion</h1>
+                   <p>Espera... ¿aun no has creado una cuenta? entonces <a class="white" href="{{route('sing')}}">Crea Una!!</a></p> 
                     <!-- Sign Up Form -->
                     <div class="form-container">
                         <form id="logInForm" data-toggle="validator" data-focus="false">
@@ -116,11 +116,11 @@
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="lpassword" required>
-                                <label class="label-control" for="lpassword">Password</label>
+                                <label class="label-control" for="lpassword">Contraseña</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">LOG IN</button>
+                                <button type="submit" class="form-control-submit-button">Iniciar Sesion</button>
                             </div>
                             <div class="form-message">
                                 <div id="lmsgSubmit" class="h3 text-center hidden"></div>

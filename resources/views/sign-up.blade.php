@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Sign Up - Tivo - SaaS App HTML Landing Page Template</title>
+    <title>Crea una Cuenta</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -64,34 +64,34 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{route('inicio')}}">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="{{route('inicio')}}">INICIO <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{route('inicio')}}">FEATURES</a>
+                        <a class="nav-link page-scroll" href="{{route('inicio')}}">CARACTERISTICAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{route('inicio')}}">DETAILS</a>
+                        <a class="nav-link page-scroll" href="{{route('inicio')}}">DETALLES</a>
                     </li>
 
                     <!-- Dropdown Menu -->          
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle page-scroll" href="index.html#video" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEO</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                            <a class="dropdown-item" href="article-details.html"><span class="item-text">DETALLES DEL ARTICULO</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMINOS Y CONDICIONES</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">POLITICA DE PRIVACIDAD</span></a>
                         </div>
                     </li>
                     <!-- end of dropdown menu -->
 
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#pricing">PRICING</a>
+                        <a class="nav-link page-scroll" href="index.html#pricing">MEMBRESIA</a>
                     </li>
                 </ul>
                 <span class="nav-item">
-                    <a class="btn-outline-sm" href="{{route('login')}}">LOG IN</a>
+                    <a class="btn-outline-sm" href="{{route('login')}}">INICIAR SESION</a>
                 </span>
             </div>
         </div> <!-- end of container -->
@@ -104,8 +104,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Sign Up</h1>
-                   <p>Fill out the form below to sign up for Tivo. Already signed up? Then just <a class="white" href="{{route('login')}}">Log In</a></p> 
+                    <h1>Crea una cuenta nueva!!</h1>
+                   <p> solo rellena los campos que se te piden, FACIL!... espera, ya tienes una cuenta? <a class="white" href="{{route('login')}}">   Solo inicia sesion</a></p> 
                     <!-- Sign Up Form -->
                     <div class="form-container">
                         <form id="signUpForm" data-toggle="validator" data-focus="false">
@@ -116,20 +116,20 @@
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="sname" required>
-                                <label class="label-control" for="sname">Name</label>
+                                <label class="label-control" for="sname">Nombre</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="spassword" required>
-                                <label class="label-control" for="spassword">Password</label>
+                                <label class="label-control" for="spassword">Contraseña</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group checkbox">
-                                <input type="checkbox" id="sterms" value="Agreed-to-Terms" required>I agree with Tivo's <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                                <input type="checkbox" id="sterms" value="Agreed-to-Terms" required>Estoy de acuerdo con la <a href="privacy-policy.html">Politica de privacidad</a> y <a href="terms-conditions.html">Terminos y condiciones</a>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SIGN UP</button>
+                                <button type="submit" class="form-control-submit-button">Crea tu cuenta</button>
                             </div>
                             <div class="form-message">
                                 <div id="smsgSubmit" class="h3 text-center hidden"></div>

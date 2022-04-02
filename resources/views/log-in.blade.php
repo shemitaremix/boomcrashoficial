@@ -108,14 +108,14 @@
                    <p>Espera... ¿aun no has creado una cuenta? entonces <a class="white" href="{{route('sing')}}">Crea Una!!</a></p> 
                     <!-- Sign Up Form -->
                     <div class="form-container">
-                        <form id="logInForm" data-toggle="validator" data-focus="false">
+                        <form data-toggle="validator" data-focus="false" action="/logeo" method="post"> @csrf
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="lemail" required>
+                                <input type="email" class="form-control-input" id="lemail" required name='email'>
                                 <label class="label-control" for="lemail">Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="lpassword" required>
+                                <input type="text" class="form-control-input" id="lpassword" required name="password">
                                 <label class="label-control" for="lpassword">Contraseña</label>
                                 <div class="help-block with-errors"></div>
                             </div>

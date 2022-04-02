@@ -108,19 +108,19 @@
                    <p> solo rellena los campos que se te piden, FACIL!... espera, ya tienes una cuenta? <a class="white" href="{{route('login')}}">   Solo inicia sesion</a></p> 
                     <!-- Sign Up Form -->
                     <div class="form-container">
-                        <form id="signUpForm" data-toggle="validator" data-focus="false">
+                        <form  data-toggle="validator" data-focus="false" action="/registrar" method="post"> @csrf
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="semail" required>
+                                <input type="email" class="form-control-input" id="semail" required name="email">
                                 <label class="label-control" for="semail">Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="sname" required>
+                                <input type="text" class="form-control-input" id="sname" required name="name">
                                 <label class="label-control" for="sname">Nombre</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="spassword" required>
+                                <input type="text" class="form-control-input" id="spassword" required name="password">
                                 <label class="label-control" for="spassword">Contraseña</label>
                                 <div class="help-block with-errors"></div>
                             </div>
@@ -129,7 +129,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">Crea tu cuenta</button>
+                                <button type="submit" class="form-control-submit-button" >Crea tu cuenta</button>
                             </div>
                             <div class="form-message">
                                 <div id="smsgSubmit" class="h3 text-center hidden"></div>

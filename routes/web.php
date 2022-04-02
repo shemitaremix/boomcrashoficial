@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsuarioController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,5 +36,15 @@ Route::get('/registrar', function () {
 |
 */
 Route::get('/boombs', function () {
+   if(Auth::check()){
     return view('posts.index');
+   }else{
+    return redirect('/login');
+   }
 })->name('post.index');
+
+Route::post('/registrar',[UsuarioController::class,'create'])->name('user');
+
+Route::get('/logeo',[UsuarioController::class,'login'])->name('login');
+Route::get('/logauth',[UsuarioController::class,'logout'])->name('logout');
+Route::post('/logeo',[UsuarioController::class,'login'])->name('logins.post');

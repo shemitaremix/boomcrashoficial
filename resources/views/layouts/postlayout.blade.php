@@ -23,6 +23,12 @@
 </head>
 <body>
 
+  @php
+    use Illuminate\Support\Facades\Auth;
+    if (Auth::check()){
+        $name = Auth::user()->name;
+    }
+  @endphp
   <!-- Back to top button -->
   <div class="back-to-top"></div>
 
@@ -59,6 +65,8 @@
               </li>
           </ul>
 
+          <a  class="nav-link">Perfil: {{$name}}</a>
+          <a href="{{route('logout')}}" class="nav-link">Cerrar sesion</a>
         </div>
       </div>
     </nav>

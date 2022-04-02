@@ -115,7 +115,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="lpassword" required name="password">
+                                <input type="password" class="form-control-input" id="lpassword" required name="password">
                                 <label class="label-control" for="lpassword">Contraseña</label>
                                 <div class="help-block with-errors"></div>
                             </div>

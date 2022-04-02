@@ -43,25 +43,24 @@
 
         <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
-            <li class="nav-item active">
-              <a href="index.html" class="nav-link">Booms!!</a>
+
+            <li class="{{! Route::is('posts.index') ?: 'active'}}">
+              <a href="{{route('posts.index')}}" class="nav-link">Booms!!</a>
             </li>
             
 
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">Boom</a>
-            </li>
+            
             
             <li class="nav-item">
                 <a href="about.html" class="nav-link">Boom Craft</a>
             </li>
             
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
+            <li class="{{! Route::is('posts.contact') ?: 'active'}}">
+              <a href="{{route('posts.contact')}}" class="nav-link">Contactos</a>
             </li>
 
-            <li class="nav-item">
-                <a href="blog.html" class="nav-link">Boomers-Dekstop</a>
+            <li class="{{! Route::is('posts.about') ?: 'active'}}">
+                <a href="{{route('posts.about')}}" class="nav-link">Boomers-Dekstop</a>
               </li>
           </ul>
 
@@ -71,24 +70,8 @@
       </div>
     </nav>
 
-    <div class="page-banner home-banner">
-      <div class="container h-100">
-        <div class="row align-items-center h-100">
-          <div class="col-lg-6 py-3 wow fadeInUp">
-            <h1 class="mb-4">Great Companies are built on great Products</h1>
-            <p class="text-lg mb-5">Ignite the most powerfull growth engine you have ever built for your company</p>
-
-            <a href="#" class="btn btn-outline border text-secondary">More Info</a>
-            <a href="#" class="btn btn-primary btn-split ml-2">Watch Video <div class="fab"><span class="mai-play"></span></div></a>
-          </div>
-          <div class="col-lg-6 py-3 wow zoomIn">
-            <div class="img-place">
-              <img src="../assets/img/bg_image_1.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    @yield('header')
+    
   </header>
 
   @yield('contenidillo')

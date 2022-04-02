@@ -51,17 +51,18 @@
 
             
             
-            <li class="nav-item">
-                <a href="about.html" class="nav-link">Boom Craft</a>
+            <li class="{{! Route::is('posts.services') ?: 'active'}}">
+                <a href="{{route('posts.services')}}" class="nav-link">Boom Craft</a>
             </li>
             
-            <li class="{{! Route::is('posts.contact') ?: 'active'}}">
-              <a href="{{route('posts.contact')}}" class="nav-link">Contactos</a>
-            </li>
+            
 
             <li class="{{! Route::is('posts.about') ?: 'active'}}">
                 <a href="{{route('posts.about')}}" class="nav-link">Boomers-Dekstop</a>
-              </li>
+            </li>
+            <li class="{{! Route::is('posts.about') ?: 'active'}}">
+                <a href="http://ricks-mortys.herokuapp.com" class="nav-link">Un dato curioso sobre Rick & Morty</a>
+            </li>
           </ul>
 
           <a  class="nav-link">Perfil: {{$name}}</a>
@@ -80,59 +81,22 @@
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-3 py-3">
-          <h3>Digi<span class="text-primary">Gram.</span></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <h3>Elaborado por<span class="text-primary">Isra Shemita Rodriguez</span></h3>
+          <p>Colaboradores: Erick Kevin Sanchez Garrido, Lopez guerrero Jose luis</p>
 
           <p><a href="#" >digigram@mail.com</a></p>
           <p><a href="#">+00 1122 3344 5566</a></p>
         </div>
-        <div class="col-lg-3 py-3">
-          <h5>Quick Links</h5>
-          <ul class="footer-menu">
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Report a Bug</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 py-3">
-          <h5>About Us</h5>
-          <ul class="footer-menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Our Teams</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">News & Press</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 py-3">
-          <h5>Subscribe</h5>
-          <form action="#">
-            <input type="text" class="form-control" placeholder="Enter your mail..">
-          </form>
-
-          <div class="sosmed-button mt-4">
-            <a href="#"><span class="mai-logo-facebook-f"></span></a>
-            <a href="#"><span class="mai-logo-twitter"></span></a>
-            <a href="#"><span class="mai-logo-google"></span></a>
-            <a href="#"><span class="mai-logo-linkedin"></span></a>
-          </div>
-        </div>
+       
+        
+       
       </div>
 
       <div class="row">
         <div class="col-sm-6 py-2">
-          <p id="copyright">&copy; 2020 <a href="https://macodeid.com/">MACode ID</a>. All rights reserved</p>
+          <p id="copyright">&copy; 2022 <a href="https://github.com/shemitaremix">Shema</a>. All rights reserved</p>
         </div>
-        <div class="col-sm-6 py-2 text-right">
-          <div class="d-inline-block px-3">
-            <a href="#">Privacy</a>
-          </div>
-          <div class="d-inline-block px-3">
-            <a href="#">Contact Us</a>
-          </div>
-        </div>
+        
       </div>
     </div> <!-- .container -->
   </footer> <!-- .page-footer -->

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TagController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -18,17 +20,13 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('index');
 })->name('inicio');
-
 Route::get('/login', function () {
     return view('log-in');
 })->name('login');
-
 Route::get('/registrar', function () {
     return view('sign-up');
 })->name('sing');
-
 Route::post('/registrar',[UsuarioController::class,'create'])->name('user');
-
 Route::get('/logeo',[UsuarioController::class,'login'])->name('login');
 Route::get('/logauth',[UsuarioController::class,'logout'])->name('logout');
 Route::post('/logeo',[UsuarioController::class,'login'])->name('logins.post');
@@ -50,18 +48,28 @@ Route::get('/boombs',[PostController::class,'index'], function () {
     return redirect('/login');
    }
 })->name('posts.index');
-
 Route::get('/boomb/{post}',[PostController::class,'show'])->name('posts.boomb');
-
-
-
 Route::get('/contacto',function(){
     return view('posts.contact');
 })->name('posts.contact');
-
 Route::get('/dekstop',function(){
     return view('posts.about');
 })->name('posts.about');
 
+/*
+|--------------------------------------------------------------------------
+| Rutas de cruds
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+Route::get('/boombcraft',[PostController::class,'view'])->name('posts.services');
+;
+Route::post('/crearcategorias',[CategoryController::class,'create'])->name('categories.create');
 
+Route::post('/crearetiquetas',[TagController::class,'create'])->name('tags.create');
 
+Route::post('/crearpublicacion',[PostController::class,'create'])->name('post.create');

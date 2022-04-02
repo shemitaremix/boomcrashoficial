@@ -38,13 +38,5 @@ class Post extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    /**
-     * conectar uno a muchos
-     * 
-     * @return hasMany
-     *
-     */
-    public function image(){
-        return $this->morphOne(Image::class,'imageable');
-    }
+   
 }

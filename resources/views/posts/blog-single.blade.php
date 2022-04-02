@@ -21,7 +21,7 @@
               Boomer <a href="#">{{$post->user->name}}</a>
             </div>
             <h1 class="post-title">{{$post->name}}</h1>
-            <img src="{{Storage::url($post->image->url)}}" alt="">
+            
             <div class="post-meta">
               <div class="post-date">
                 <span class="icon">
@@ -88,7 +88,7 @@
               @foreach($similares as $similar)
               <div class="blog-item">
                   <a class="post-thumb" href="">
-                    <img src="{{Storage::url($similar->image->url)}}" alt="">
+                    <img src="" alt="">
                   </a>
                   <div class="content">
                     <h6 class="post-title"><a href="{{route('posts.boomb',$similar)}}">{{$similar->name}}</a></h6>

@@ -58,7 +58,7 @@
                   $name = Auth::user()->name;
               }
             @endphp
-              <input  class="nav-link" name="user_id">Perfil: {{$name}}></input>
+              <input placeholder="Un número entre 1 y 2" class="nav-link" name="user_id">Perfil: {{$name}}></input>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">nombre Publicacion</label>

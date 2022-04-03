@@ -17,7 +17,7 @@ Esta api puede ser mucho mejor, nos pueden ayudar a mantenerla viva usandola y m
 ```
 git status
 git add .
-git commit -m "mesaje"
+git commit -m "mesajes"
 git push
 ```
 
